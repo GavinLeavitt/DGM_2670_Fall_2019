@@ -8,6 +8,8 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="ControlInput.cs" t="Include" />
+          <e p="FloatData.cs" t="Include" />
+          <e p="TriggerEventBehaviour.cs" t="Include" />
         </e>
       </e>
       <e p="Game_DGM_2670_Fall_2019.sln" t="IncludeFlat" />

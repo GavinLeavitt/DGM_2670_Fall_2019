@@ -9,7 +9,7 @@ public class ControlInput : MonoBehaviour
     //private float AxisAngle;
     
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         //AxisAngle = Vector2.Angle(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         // (FIX SO DIAGONAL MOVEMENT IS NOT FASTER THAN HORIZ/VERT)

@@ -322,6 +322,7 @@ GameObject:
   - component: {fileID: 961513518}
   - component: {fileID: 961513517}
   - component: {fileID: 961513516}
+  - component: {fileID: 961513519}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -360,23 +361,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4907258ec0b1b3d4c8f0ca7b647a5323, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UpdateImageEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 961513516}
-        m_MethodName: UpdateImageComponent
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 2290872b2f9b9144686a8d34a184d940,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: FloatData, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &961513517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -414,6 +398,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961513514}
   m_CullTransparentMesh: 0
+--- !u!114 &961513519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961513514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48410129a097a2443ae3da4427ea84d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameActionObj: {fileID: 11400000, guid: 0b4cbc9104517e746a46c5a159663345, type: 2}
+  handlerEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 961513516}
+        m_MethodName: UpdateImageComponent
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 2290872b2f9b9144686a8d34a184d940,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: FloatData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -761,8 +775,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2442790410445626132, guid: 3f0913f4980c2ef47bb1a7bd9d059b8d,
         type: 3}
+      propertyPath: TriggerEnterEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2442790410445626132, guid: 3f0913f4980c2ef47bb1a7bd9d059b8d,
+        type: 3}
       propertyPath: TriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: UpdateValueClamped
+      objectReference: {fileID: 0}
+    - target: {fileID: 2442790410445626132, guid: 3f0913f4980c2ef47bb1a7bd9d059b8d,
+        type: 3}
+      propertyPath: TriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2442790410445626132, guid: 3f0913f4980c2ef47bb1a7bd9d059b8d,
+        type: 3}
+      propertyPath: TriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2442790410445626132, guid: 3f0913f4980c2ef47bb1a7bd9d059b8d,
+        type: 3}
+      propertyPath: TriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: 0b4cbc9104517e746a46c5a159663345,
+        type: 2}
+    - target: {fileID: 2442790410445626132, guid: 3f0913f4980c2ef47bb1a7bd9d059b8d,
+        type: 3}
+      propertyPath: TriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Raise
+      objectReference: {fileID: 0}
+    - target: {fileID: 2442790410445626132, guid: 3f0913f4980c2ef47bb1a7bd9d059b8d,
+        type: 3}
+      propertyPath: TriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f0913f4980c2ef47bb1a7bd9d059b8d, type: 3}
@@ -777,11 +822,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bullet
-      objectReference: {fileID: 0}
-    - target: {fileID: 4306300393805237882, guid: e117958aca43dea4b87d45b62820155d,
-        type: 3}
-      propertyPath: m_Layer
-      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4306300393805237887, guid: e117958aca43dea4b87d45b62820155d,
         type: 3}
@@ -837,37 +877,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4306300393805237883, guid: e117958aca43dea4b87d45b62820155d,
-        type: 3}
-      propertyPath: TriggerEnterEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4306300393805237883, guid: e117958aca43dea4b87d45b62820155d,
-        type: 3}
-      propertyPath: TriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: UpdateValueClamped
-      objectReference: {fileID: 0}
-    - target: {fileID: 4306300393805237883, guid: e117958aca43dea4b87d45b62820155d,
-        type: 3}
-      propertyPath: TriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4306300393805237883, guid: e117958aca43dea4b87d45b62820155d,
-        type: 3}
-      propertyPath: TriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 11400000, guid: 2290872b2f9b9144686a8d34a184d940,
-        type: 2}
-    - target: {fileID: 4306300393805237883, guid: e117958aca43dea4b87d45b62820155d,
-        type: 3}
-      propertyPath: TriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 4306300393805237883, guid: e117958aca43dea4b87d45b62820155d,
-        type: 3}
-      propertyPath: TriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
-      value: -0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e117958aca43dea4b87d45b62820155d, type: 3}

@@ -1,9 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
-using UnityEditor.VersionControl;
-using UnityEngine;
-using UnityEngine.UIElements;
+﻿using UnityEngine;
 
 public class ControlMovement : MonoBehaviour
 {
@@ -14,11 +9,11 @@ public class ControlMovement : MonoBehaviour
     {
         characterController = GetComponent<CharacterController>();
     }
-    
-    // Update is called once per frame
+
     private void Update()
     {
-        var moveDirection = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0.0f);
+        var mouseAxis = System.Convert.ToSingle(Input.GetMouseButton(0)) - System.Convert.ToSingle(Input.GetMouseButton(1));
+        var moveDirection = new Vector3(Input.GetAxis("Horizontal"), mouseAxis, Input.GetAxis("Vertical"));
         moveDirection *= speed;
         characterController.Move(moveDirection * Time.deltaTime);
     }

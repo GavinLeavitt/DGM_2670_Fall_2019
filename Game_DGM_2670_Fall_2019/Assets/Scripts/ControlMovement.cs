@@ -13,8 +13,7 @@ public class ControlMovement : MonoBehaviour
 
     private void Update()
     {
-        var mouseAxis = System.Convert.ToSingle(Input.GetMouseButton(0)) - System.Convert.ToSingle(Input.GetMouseButton(1));
-        var moveDirection = new Vector3(Input.GetAxis("Horizontal"), mouseAxis, Input.GetAxis("Vertical"));
+        var moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
         moveDirection *= speed;
         characterController.Move(moveDirection * Time.deltaTime);
     }

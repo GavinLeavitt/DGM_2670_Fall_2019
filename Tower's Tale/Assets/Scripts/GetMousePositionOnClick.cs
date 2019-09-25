@@ -14,7 +14,7 @@ public class GetMousePositionOnClick : MonoBehaviour
         if (Physics.Raycast(testRay, out hit))
         {
             playerPosition.positionVector = hit.point;
-            playerPosition.positionVector.y = 0;
+            playerPosition.positionVector.y = 0.5f;
         }
     }
 }

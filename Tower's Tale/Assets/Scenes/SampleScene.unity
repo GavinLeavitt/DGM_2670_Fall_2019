@@ -323,6 +323,7 @@ MonoBehaviour:
   destinationPosition: {fileID: 11400000, guid: 4c7a84647cd5f5b44b75020d04e81a7c,
     type: 2}
   characterController: {fileID: 747082246}
+  speed: 5
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0

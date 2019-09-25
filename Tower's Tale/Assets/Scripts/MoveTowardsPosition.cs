@@ -22,6 +22,8 @@ public class MoveTowardsPosition : MonoBehaviour
 
         // Non-interpolated movetowards
         var step = speed * Time.deltaTime;
-        characterController.transform.position = Vector3.MoveTowards(characterController.transform.position, destinationPosition.positionVector, step);
+        Transform transform1;
+        (transform1 = characterController.transform).position = Vector3.MoveTowards(characterController.transform.position, destinationPosition.positionVector, step);
+        //transform1.rotation = Quaternion.FromToRotation(Vector3.up, destinationPosition.positionVector);
     }
 }

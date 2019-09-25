@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afbf7d28c1821784b8fff6d4125774f0, type: 3}
   m_Name: PlayerDestination
   m_EditorClassIdentifier: 
-  positionVector: {x: -0.009100335, y: 0.5, z: -2.4730127}
+  positionVector: {x: 5.7816854, y: 0.5, z: -0.8274876}

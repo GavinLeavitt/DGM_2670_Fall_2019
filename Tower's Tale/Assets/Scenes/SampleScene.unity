@@ -426,6 +426,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Character Concept
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 4ced8d3fc1535244d940538625f5bbb2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4ced8d3fc1535244d940538625f5bbb2,
         type: 3}
       propertyPath: m_LocalPosition.x

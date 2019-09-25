@@ -9,12 +9,9 @@ public class GetMousePositionOnClick : MonoBehaviour
 
     private void OnMouseDown()
     {
-        RaycastHit hit;
-        Ray testRay = cam.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(testRay, out hit))
-        {
-            playerPosition.positionVector = hit.point;
-            playerPosition.positionVector.y = 0.5f;
-        }
+        var testRay = cam.ScreenPointToRay(Input.mousePosition);
+        if (!Physics.Raycast(testRay, out var hit)) return;
+        playerPosition.positionVector = hit.point;
+        playerPosition.positionVector.y = 0.5f;
     }
 }

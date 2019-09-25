@@ -16,14 +16,12 @@ public class MoveTowardsPosition : MonoBehaviour
 
     private void Update()
     {
-        if (Vector3.Distance(characterController.transform.position, destinationPosition.positionVector) > 0.001f)
-        {
-            // Lerp movetowards
-            //characterController.Move((destinationPosition.positionVector-characterController.transform.position)/40);
+        if (!(Vector3.Distance(characterController.transform.position, destinationPosition.positionVector) > 0.001f)) return;
+        // Lerp movetowards
+        //characterController.Move((destinationPosition.positionVector-characterController.transform.position)/40);
 
-            // Non-interpolated movetowards
-            float step = speed * Time.deltaTime;
-            characterController.transform.position = Vector3.MoveTowards(characterController.transform.position, destinationPosition.positionVector, step);
-        }
+        // Non-interpolated movetowards
+        var step = speed * Time.deltaTime;
+        characterController.transform.position = Vector3.MoveTowards(characterController.transform.position, destinationPosition.positionVector, step);
     }
 }

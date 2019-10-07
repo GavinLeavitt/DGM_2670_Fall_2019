@@ -27,6 +27,7 @@ public class ControlMovement : MonoBehaviour
         } else if (characterController.isGrounded)
         {
             position.y = 0;
+            jumpData.value = 0;
         }
 
         characterController.Move((position) * Time.deltaTime);

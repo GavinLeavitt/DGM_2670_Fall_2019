@@ -10,6 +10,7 @@
           <e p="ActionCalls.cs" t="Include" />
           <e p="AIWithNavMesh.cs" t="Include" />
           <e p="ControlMovement.cs" t="Include" />
+          <e p="Coroutines.cs" t="Include" />
           <e p="FloatData.cs" t="Include" />
           <e p="GameAction.cs" t="Include" />
           <e p="GameActionHandler.cs" t="Include" />

@@ -17,6 +17,13 @@
           <e p="ImageController.cs" t="Include" />
           <e p="IntData.cs" t="Include" />
           <e p="TriggerEventBehaviour.cs" t="Include" />
+          <e p="UnityActions Tutorial" t="Include">
+            <e p="EndgameClass.cs" t="Include" />
+            <e p="EnemyClass.cs" t="Include" />
+            <e p="PlayerClass.cs" t="Include" />
+            <e p="PowerupClass.cs" t="Include" />
+            <e p="WeaponClass.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="Game_DGM_2670_Fall_2019.sln" t="IncludeFlat" />

@@ -761,8 +761,9 @@ GameObject:
   - component: {fileID: 1366824583}
   - component: {fileID: 1366824582}
   - component: {fileID: 1366824585}
-  - component: {fileID: 1366824580}
   - component: {fileID: 1366824581}
+  - component: {fileID: 1366824580}
+  - component: {fileID: 1366824586}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -779,13 +780,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1366824579}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28ebece54b0afd54f8c2011f3425646f, type: 3}
+  m_Script: {fileID: 11500000, guid: d86bd117cd847174ba40ef6b0870e2ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 8
-  jumpSpeed: 30
-  gravity: 3
-  jumpData: {fileID: 11400000, guid: 4c93e8886503ebe429101cb7b30ca018, type: 2}
+  onUpdateEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 314604160f577b24aa80ba0803b93e70, type: 2}
+        m_MethodName: MoveCharacter
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1366824585}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.CharacterController, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!208 &1366824581
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -879,6 +892,34 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1366824586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366824579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e0fdc16ea4102e4f8953c7ba0bc49f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MouseDownEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 7a84a58b3988ce948a867069cb0aeedd, type: 2}
+        m_MethodName: OnDebug
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: YOU CLICKED ME
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1768144474
 GameObject:
   m_ObjectHideFlags: 0

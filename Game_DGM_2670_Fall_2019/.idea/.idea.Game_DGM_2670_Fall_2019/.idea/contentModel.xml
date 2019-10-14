@@ -9,13 +9,17 @@
         <e p="Scripts" t="Include">
           <e p="ActionCalls.cs" t="Include" />
           <e p="AIWithNavMesh.cs" t="Include" />
+          <e p="AnimController.cs" t="Include" />
           <e p="ControlMovement.cs" t="Include" />
           <e p="Coroutines.cs" t="Include" />
+          <e p="CreateSOData.cs" t="Include" />
+          <e p="Debugger.cs" t="Include" />
           <e p="FloatData.cs" t="Include" />
           <e p="GameAction.cs" t="Include" />
           <e p="GameActionHandler.cs" t="Include" />
           <e p="ImageController.cs" t="Include" />
           <e p="IntData.cs" t="Include" />
+          <e p="MouseEvents.cs" t="Include" />
           <e p="TriggerEventBehaviour.cs" t="Include" />
           <e p="UnityActions Tutorial" t="Include">
             <e p="EndgameClass.cs" t="Include" />
@@ -24,6 +28,7 @@
             <e p="PowerupClass.cs" t="Include" />
             <e p="WeaponClass.cs" t="Include" />
           </e>
+          <e p="UpdateEvent.cs" t="Include" />
         </e>
       </e>
       <e p="Game_DGM_2670_Fall_2019.sln" t="IncludeFlat" />

@@ -1,20 +1,14 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 
-[RequireComponent(typeof(CharacterController))]
-public class ControlMovement : MonoBehaviour
+[CreateAssetMenu]
+public class ControlMovement : ScriptableObject
 {
     public float moveSpeed = 8.0f, jumpSpeed = 30.0f, gravity = 3.0f;
-    private CharacterController characterController;
     private Vector3 position;
     public IntData jumpData;
 
-    private void Start()
-    {
-        characterController = GetComponent<CharacterController>();
-    }
-
-    private void Update()
+    public void MoveCharacter(CharacterController controller)
     {
         position.x = moveSpeed * Input.GetAxis("Horizontal");
         position.z = moveSpeed * Input.GetAxis("Vertical");
@@ -24,11 +18,12 @@ public class ControlMovement : MonoBehaviour
         {
             position.y = jumpSpeed;
             jumpData.value++;
-        } else if (characterController.isGrounded)
+        } else if (controller.isGrounded)
         {
             position.y = 0;
+            jumpData.value = 0;
         }
 
-        characterController.Move((position) * Time.deltaTime);
+        controller.Move((position) * Time.deltaTime);
     }
 }

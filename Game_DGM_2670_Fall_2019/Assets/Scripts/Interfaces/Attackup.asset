@@ -9,8 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a653857cfcc55164bb91ef2aa4ec159d, type: 3}
-  m_Name: JumpCount
+  m_Script: {fileID: 11500000, guid: ddffc22f881aa8644be7e6bef20a1ccf, type: 3}
+  m_Name: Attackup
   m_EditorClassIdentifier: 
-  value: 0
-  maxValue: 50

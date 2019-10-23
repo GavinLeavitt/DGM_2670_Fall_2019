@@ -151,6 +151,11 @@
             <e p="PlayerHealth.cs" t="Include" />
             <e p="PowerUp.cs" t="Include" />
           </e>
+          <e p="Interfaces Tutorial" t="Include">
+            <e p="MoveController.cs" t="Include" />
+            <e p="MoveHVArrows.cs" t="Include" />
+            <e p="MoveLRArrows.cs" t="Include" />
+          </e>
           <e p="LearningScripts" t="Include">
             <e p="ActionCalls.cs" t="Include" />
             <e p="Coroutines.cs" t="Include" />

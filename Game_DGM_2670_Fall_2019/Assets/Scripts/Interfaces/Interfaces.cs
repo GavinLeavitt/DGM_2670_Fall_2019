@@ -19,3 +19,9 @@ public interface IListen
         IRun NewIRunObj { get; set; }
         void Start();
 }
+
+public interface IMove
+{
+        Vector3 location { get; set; }
+        void Move(CharacterController controller);
+}

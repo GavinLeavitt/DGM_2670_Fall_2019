@@ -163,6 +163,8 @@
           <e p="MonoEventBehaviors.cs" t="Include" />
           <e p="MouseEvents.cs" t="Include" />
           <e p="ScriptableObjects" t="Include">
+            <e p="CharacterBase.cs" t="Include" />
+            <e p="CharacterPrime.cs" t="Include" />
             <e p="Debugger.cs" t="Include" />
             <e p="FloatData.cs" t="Include" />
             <e p="GameAction.cs" t="Include" />

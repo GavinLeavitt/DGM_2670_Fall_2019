@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: JumpCount
   m_EditorClassIdentifier: 
   value: 0
-  maxValue: 2
+  maxValue: 50

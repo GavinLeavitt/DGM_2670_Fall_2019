@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afbf7d28c1821784b8fff6d4125774f0, type: 3}
   m_Name: TowerSegmentPosition
   m_EditorClassIdentifier: 
-  positionVector: {x: 0.02385893, y: 6.5, z: 2.271948}
+  positionVector: {x: 0.02385893, y: 5.2, z: 0.3}

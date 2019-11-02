@@ -15,3 +15,4 @@ MonoBehaviour:
   objectToTransform: {fileID: 8205468559297548287, guid: 3a6b64c8150d0c749b2df3616331939b,
     type: 3}
   position: {fileID: 11400000, guid: 3daca64323752c3478415c1aad8df3de, type: 2}
+  startingScale: 0.92979205

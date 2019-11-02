@@ -15,4 +15,9 @@ public class IntData : ScriptableObject
             Value += valueToAdd;
         }
     }
+
+    public void SetValue(int valueToSet)
+    {
+        Value = valueToSet;
+    }
 }

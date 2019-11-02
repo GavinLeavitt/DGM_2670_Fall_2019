@@ -11,4 +11,9 @@ public class PositionData : ScriptableObject
     {
         positionVector.y += newY;
     }
+
+    public void SetYPosition(float setY)
+    {
+        positionVector.y = setY;
+    }
 }

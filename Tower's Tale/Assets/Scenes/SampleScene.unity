@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657886, g: 0.4964127, b: 0.57481724, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -657,7 +657,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -726,24 +726,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Book w Page Turn
       objectReference: {fileID: 0}
-    - target: {fileID: 9143458978865277180, guid: 93feaa5f8d4658e4f8947620080e5d71,
+    - target: {fileID: -6873340628982950190, guid: 93feaa5f8d4658e4f8947620080e5d71,
         type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9143458978865277180, guid: 93feaa5f8d4658e4f8947620080e5d71,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4060330697672192706, guid: 93feaa5f8d4658e4f8947620080e5d71,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4993196394260326210, guid: 93feaa5f8d4658e4f8947620080e5d71,
-        type: 3}
-      propertyPath: m_IsActive
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -6057140222963153312, guid: 93feaa5f8d4658e4f8947620080e5d71,
@@ -821,10 +806,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 84.41457
       objectReference: {fileID: 0}
-    - target: {fileID: -6873340628982950190, guid: 93feaa5f8d4658e4f8947620080e5d71,
+    - target: {fileID: 4060330697672192706, guid: 93feaa5f8d4658e4f8947620080e5d71,
         type: 3}
-      propertyPath: m_Enabled
+      propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4993196394260326210, guid: 93feaa5f8d4658e4f8947620080e5d71,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9143458978865277180, guid: 93feaa5f8d4658e4f8947620080e5d71,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9143458978865277180, guid: 93feaa5f8d4658e4f8947620080e5d71,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93feaa5f8d4658e4f8947620080e5d71, type: 3}

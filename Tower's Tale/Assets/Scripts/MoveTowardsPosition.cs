@@ -24,6 +24,5 @@ public class MoveTowardsPosition : MonoBehaviour
         var step = speed * Time.deltaTime;
         Transform transform1;
         (transform1 = characterController.transform).position = Vector3.MoveTowards(characterController.transform.position, destinationPosition.positionVector, step);
-        transform1.LookAt(destinationPosition.positionVector, Vector3.up);
     }
 }

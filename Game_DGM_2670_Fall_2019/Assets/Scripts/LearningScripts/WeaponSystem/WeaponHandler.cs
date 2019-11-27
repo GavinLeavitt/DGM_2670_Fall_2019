@@ -1,18 +1,25 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class WeaponHandler : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	public WeaponConfig weaponObj;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	void Start()
+	{
+		weaponObj.weaponFireAction = Fire;
+		var renderer = GetComponent<Renderer>();
+		renderer.material.color = weaponObj.weaponColor;
+	}
+
+	public void Fire()
+	{
+		
+		var ammo = Instantiate(weaponObj.ammoObj);
+		ammo.GetComponent<AmmoHandler>().weaponObj = weaponObj;
+	}
+
+	private void OnTriggerEnter(Collider other)
+	{
+		weaponObj.RaiseCollectAction();
+	}
 }

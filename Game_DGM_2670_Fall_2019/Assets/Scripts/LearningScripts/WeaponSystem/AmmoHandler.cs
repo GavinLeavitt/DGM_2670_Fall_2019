@@ -1,18 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public class AmmoHandler : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	private Rigidbody rigidbodyObj;
+	public Vector3 forces;
+	public WeaponConfig weaponObj;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	private void Start()
+	{
+		var renderer = GetComponent<Renderer>();
+		renderer.material.color = weaponObj.weaponColor;
+		rigidbodyObj = GetComponent<Rigidbody>();
+		rigidbodyObj.AddForce(forces);
+		Destroy(gameObject, 1f);
+	}
+
+	private void OnTriggerEnter(Collider other)
+	{
+		weaponObj.DoDamage();
+	}
 }

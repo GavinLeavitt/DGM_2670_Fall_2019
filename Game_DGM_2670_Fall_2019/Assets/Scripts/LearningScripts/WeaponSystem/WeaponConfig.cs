@@ -1,18 +1,30 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Events;
 
-public class WeaponConfig : MonoBehaviour
+[CreateAssetMenu]
+public class WeaponConfig : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	public UnityAction weaponFireAction;
+	public UnityAction collectWeaponAction;
+	public GameAction damageAction;
+	public Color weaponColor = Color.red;
+	public GameObject ammoObj;
+	public float firePower = 0.1f;
+	public FloatData playerHealth;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	public void RaiseFireAction()
+	{
+		weaponFireAction?.Invoke();
+	}
+
+	public void RaiseCollectAction()
+	{
+		collectWeaponAction?.Invoke();
+	}
+
+	public void DoDamage()
+	{
+		playerHealth.UpdateValue(firePower);
+		damageAction.Raise();
+	}
 }

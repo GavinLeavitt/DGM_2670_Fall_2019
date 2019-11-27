@@ -16,4 +16,9 @@ public class PositionData : ScriptableObject
     {
         positionVector.y = setY;
     }
+
+    public void SetPositionToObj(Transform transformObj)
+    {
+        positionVector = transformObj.position;
+    }
 }

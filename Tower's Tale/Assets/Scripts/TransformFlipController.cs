@@ -24,10 +24,10 @@ public class TransformFlipController : MonoBehaviour
             //Debug.Log(newOrientation);
             if (newOrientation != transformObj.transform.eulerAngles.y)
             {
-                if (newOrientation == 0.0f)
+                if (newOrientation == 0.0f && transformObj.transform.eulerAngles.y == 180.0f)
                 {
                     StartCoroutine("FlipLeft");
-                } else if (newOrientation == 180.0f)
+                } else if (newOrientation == 180.0f && transformObj.transform.eulerAngles.y == 0.0f)
                 {
                     StartCoroutine("FlipRight");
                 }
